@@ -6,6 +6,6 @@ VOLUME ["sys/fs/cgroup"]
 
 CMD ["/usr/sbin/init"]
 
-CMD ["systemctl start httpd.service"]
+RUN ["systemctl start httpd.service"]
 
 EXPOSE 80
